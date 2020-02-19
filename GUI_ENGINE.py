@@ -380,7 +380,6 @@ class Scroll:
                 self.rectangle.DrawPos = (self.Positions[0], self.Positions[2], self.DrawPos[2],
                                           self.DrawPos[3] + y - (self.Positions[2] + self.Positions[3]) / 2)
                 self.rectangle.Positions = self.Positions
-        print(self.CalculateValue())
 
     def CalculateValue(self):
         return (((((self.Positions[2] + self.Positions[3]) / 2) - self.BottomValue) / (
