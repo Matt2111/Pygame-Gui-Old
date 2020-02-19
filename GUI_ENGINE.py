@@ -217,7 +217,7 @@ class EntryField:
 
     def LoadEntry(self):
         if self.InputTypeAllowed is not None:
-            if not CheckType(self.Entry, self.InputTypeAllowed):
+            if not CheckType(self.Input, self.InputTypeAllowed):
                 self.Input = ""
             else:
                 self.Entry, self.Input = self.InputTypeAllowed(self.Input), ""
